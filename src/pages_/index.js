@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import CustomCarousel from "../components/Carousel";
 import WhoAreWe from "../components/WhoAreWe";
+import OurClients from "../components/OurClients";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <CustomCarousel />
       <WhoAreWe />
+      <OurClients />
     </>
   );
 }
