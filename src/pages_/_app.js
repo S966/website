@@ -3,6 +3,7 @@ import { customTheme } from "../utils/theme";
 import { GlobalStyle } from "../utils/theme/globalStyle";
 
 import "../../public/styles.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function App({ Component, pageProps }) {
   return (
