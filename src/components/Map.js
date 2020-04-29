@@ -65,7 +65,7 @@ export default function Map() {
         width="100%"
         height="500px"
         frameBorder="0"
-        src="https://a.tiles.mapbox.com/v4/966.i66h5i7m/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiOTY2IiwiYSI6IlYtTlBwQ1kifQ.2KPxu2Nv_c5IPZMZj7EFcw"
+        src="https://a.tiles.mapbox.com/v4/966.i66h5i7m/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiOTY2IiwiYSI6IlYtTlBwQ1kifQ.2KPxu2Nv_c5IPZMZj7EFcw"
       />
     </Flex>
   )
