@@ -1,4 +1,4 @@
-import { Box, Grid, Heading, Link, Text } from "@chakra-ui/core";
+import { Box, Grid, Heading, Link, Text } from '@chakra-ui/core'
 
 function Item({ src, alt, href }) {
   return (
@@ -8,6 +8,7 @@ function Item({ src, alt, href }) {
       justifySelf="center"
       gridGap={10}
       w="60%"
+      background="mustard"
     >
       <Grid gridTemplateRows="auto auto">
         <Heading
@@ -21,9 +22,8 @@ function Item({ src, alt, href }) {
         </Heading>
         <Text color="#4d4d4d">
           Sign up for our weekly newsletter of the best articles on startups,
-          entrepreneurship, technology, programming, and more. All links are
-          curated by hand from the most talked about content in the tech
-          community.
+          entrepreneurship, technology, programming, and more. All links are curated by
+          hand from the most talked about content in the tech community.
         </Text>
       </Grid>
       <Grid>
@@ -34,7 +34,7 @@ function Item({ src, alt, href }) {
         />
       </Grid>
     </Grid>
-  );
+  )
 }
 
 export default function Newsletter() {
@@ -42,5 +42,5 @@ export default function Newsletter() {
     <Grid py="30px" background="#f4b860" w="100%">
       <Item />
     </Grid>
-  );
+  )
 }
