@@ -7,7 +7,7 @@ function Item({ src, alt, href }) {
       align="center"
       justifySelf="center"
       gridGap={10}
-      w="69%"
+      w="60%"
     >
       <Grid gridTemplateRows="auto auto">
         <Heading
