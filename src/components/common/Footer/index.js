@@ -12,6 +12,8 @@ import {
 import { FaFacebookSquare, FaTwitter } from 'react-icons/fa'
 import style from './styles.module.scss'
 
+let year = new Date().getFullYear()
+
 export default function Footer() {
   return (
     <Grid
@@ -78,7 +80,7 @@ export default function Footer() {
         </PseudoBox>
       </Flex>
       <Stack direction="column" align="center" fontSize="1.205em">
-        <Text>© 2019</Text>
+        <Text>© {year}</Text>
         <Text>made in saudi arabia</Text>
       </Stack>
     </Grid>
