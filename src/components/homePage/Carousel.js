@@ -5,7 +5,14 @@ function Item({ src, alt, text }) {
   return (
     <Box>
       <Image alt={alt} src={src} w="100%" />
-      <Heading size="md" textAlign="start" pl="5" py="2" as="h1" color="gray.100">
+      <Heading
+        fontSize={['sm', 'md', '3xl']}
+        textAlign="start"
+        pl="5"
+        py="2"
+        as="h1"
+        color="gray.100"
+      >
         {text}
       </Heading>
     </Box>
@@ -17,7 +24,6 @@ export default function CustomCarousel() {
     <Flex w="95%">
       <Carousel
         autoPlay
-        infiniteLoop
         emulateTouch
         swipeable
         showStatus={false}

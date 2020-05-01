@@ -46,6 +46,7 @@ const btnRef = React.useRef()
           <DrawerCloseButton />
 
          <Stack fontSize="3xl" fontFamily="PT Sans" >
+          <MobileNavItem title="HOME" link="/" />
           <MobileNavItem title="SERVICES" link="/services" />
           <MobileNavItem title="WORK" link="/work" />
           <MobileNavItem title="HIRE US" link="/hire-us" />
