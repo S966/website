@@ -1,4 +1,4 @@
-import { Box, Grid, Heading, Link, Text } from '@chakra-ui/core'
+import { Box, Grid, Heading, Link, Text } from "@chakra-ui/core";
 
 function Item({ src, alt, href }) {
   return (
@@ -21,8 +21,9 @@ function Item({ src, alt, href }) {
         </Heading>
         <Text color="#4d4d4d">
           Sign up for our weekly newsletter of the best articles on startups,
-          entrepreneurship, technology, programming, and more. All links are curated by
-          hand from the most talked about content in the tech community.
+          entrepreneurship, technology, programming, and more. All links are
+          curated by hand from the most talked about content in the tech
+          community.
         </Text>
       </Grid>
       <Grid>
@@ -32,56 +33,66 @@ function Item({ src, alt, href }) {
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
-            class="validate"
+            className="validate"
             target="_blank"
-            novalidate
+            noValidate
           >
-            <div class="mc-field-group">
-              <label for="mce-FULLNAME">Full Name </label>
-              <input type="text" value="" name="FULLNAME" class="" id="mce-FULLNAME" />
+            <div className="mc-field-group">
+              <label htmlFor="mce-FULLNAME">Full Name </label>
+              <input
+                type="text"
+                defaultValue=""
+                name="FULLNAME"
+                className=""
+                id="mce-FULLNAME"
+              />
             </div>
-            <div class="mc-field-group">
-              <label for="mce-EMAIL">
-                Email Address <span class="asterisk">*</span>
+            <div className="mc-field-group">
+              <label htmlFor="mce-EMAIL">
+                Email Address <span className="asterisk">*</span>
               </label>
               <input
                 type="email"
-                value=""
+                defaultValue=""
                 name="EMAIL"
-                class="required email"
+                className="required email"
                 id="mce-EMAIL"
               />
             </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style={{ display: 'none' }} />
+            <div id="mce-responses" className="clear">
               <div
-                class="response"
+                className="response"
+                id="mce-error-response"
+                style={{ display: "none" }}
+              />
+              <div
+                className="response"
                 id="mce-success-response"
-                style={{ display: 'none' }}
+                style={{ display: "none" }}
               />
             </div>
-            <div style={{ position: 'absolute', left: '-5000px' }}>
+            <div style={{ position: "absolute", left: "-5000px" }}>
               <input
                 type="text"
                 name="b_03baa6734b1ba1e29373d4fe4_11d6d828b6"
-                tabindex="-1"
-                value=""
+                tabIndex="-1"
+                defaultValue=""
               />
             </div>
-            <div class="clear">
+            <div className="clear">
               <input
                 type="submit"
-                value="Subscribe"
+                defaultValue="Subscribe"
                 name="subscribe"
                 id="mc-embedded-subscribe"
-                class="button"
+                className="button"
               />
             </div>
           </form>
         </div>
       </Grid>
     </Grid>
-  )
+  );
 }
 
 export default function Newsletter() {
@@ -89,5 +100,5 @@ export default function Newsletter() {
     <Grid py="50px" background="#f4b860" w="100%">
       <Item />
     </Grid>
-  )
+  );
 }

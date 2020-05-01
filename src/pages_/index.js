@@ -1,10 +1,10 @@
-import Header from "../components/Header";
-import CustomCarousel from "../components/Carousel";
-import WhoAreWe from "../components/WhoAreWe";
-import OurClients from "../components/OurClients";
-import Map from "../components/Map";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
+import Header from "../components/common/Header";
+import CustomCarousel from "../components/homePage/Carousel";
+import WhoAreWe from "../components/homePage/WhoAreWe";
+import OurClients from "../components/homePage/OurClients";
+import Map from "../components/common/Map";
+import Newsletter from "../components/common/Newsletter";
+import Footer from "../components/common/Footer";
 
 export default function Home() {
   return (

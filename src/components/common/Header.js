@@ -38,7 +38,11 @@ export default function Header() {
         mt="4"
         color="#ed6555"
       >
-        <Image src="/static/images/logo.png" alt="Studio 966 Logo." />
+        <RouterLink href={"/"}>
+          <PseudoBox _hover={{ cursor: "pointer" }}>
+            <Image src="/static/images/logo.png" alt="Studio 966 Logo." />
+          </PseudoBox>
+        </RouterLink>
         <Stack isInline>
           <NavItem title="SERVICES" link="/services" />
           <NavItem title="WORK" link="/work" />
