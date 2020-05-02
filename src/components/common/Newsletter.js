@@ -29,8 +29,8 @@ function Item({ src, alt, href }) {
       <Grid>
         <script
           async
-          data-uid="3c9de99870"
-          src="https://966.ck.page/3c9de99870/index.js"
+          data-uid="d1e4247910"
+          src="https://966.ck.page/d1e4247910/index.js"
         />
       </Grid>
     </Grid>
