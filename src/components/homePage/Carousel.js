@@ -6,10 +6,11 @@ function Item({ src, alt, text }) {
     <Box>
       <Image alt={alt} src={src} w="100%" />
       <Heading
-        fontSize={['sm', 'md', '3xl']}
+        fontSize={['sm', 'md', '4xl']}
+        fontWeight="400"
         textAlign="start"
-        pl="5"
         py="2"
+        ml="2"
         as="h1"
         color="gray.100"
       >
@@ -24,12 +25,13 @@ export default function CustomCarousel() {
     <Flex w="95%">
       <Carousel
         autoPlay
+        infiniteLoop
         emulateTouch
         swipeable
         showStatus={false}
         showThumbs={false}
         showIndicators={false}
-        interval={8 * 1000}
+        interval={900 * 1000}
       >
         <Item
           alt="Currrva app."
