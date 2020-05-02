@@ -1,34 +1,29 @@
-import {
-  Flex,
-  Image,
-  SimpleGrid,
-  Heading,
-  Text,
-  PseudoBox,
-} from "@chakra-ui/core";
-import Link from "next-translate/Link";
+import { Flex, Image, SimpleGrid, Heading, Text, PseudoBox } from '@chakra-ui/core'
+import Link from 'next-translate/Link'
 
 function Item({ href, src, alt, title, body }) {
   return (
-    <Flex direction="column" my="5">
-      <PseudoBox _hover={{ cursor: "pointer" }}>
+    <Flex direction="column" my="6">
+      <PseudoBox _hover={{ cursor: 'pointer' }}>
         <Link href={href}>
-          <Image src={src} alt={alt} />
+          <Image src={src} alt={alt} w="98%" />
         </Link>
         <Link href={href}>
-          <Heading as="h1" size="md" my="5">
+          <Heading as="h1" fontSize="2xl" fontWeight="normal" my="5">
             {title}
           </Heading>
         </Link>
       </PseudoBox>
-      <Text lineHeight="1.7">{body}</Text>
+      <Text lineHeight="1.7" fontSize="lg" fontWeight="normal" color="rgba(0,0,0,.56)">
+        {body}
+      </Text>
     </Flex>
-  );
+  )
 }
 
 export default function WorkExamples() {
   return (
-    <SimpleGrid columns={["1", "2", "3"]} w="90%" spacing="6" my="5">
+    <SimpleGrid color="charcoal" columns={['1', '2', '3']} w="78%" spacing="6" my="5">
       <Item
         href="#"
         src="/static/images/work/hunger-station-cover.png"
@@ -72,5 +67,5 @@ export default function WorkExamples() {
         body="Sift is our own clever little app that we designed at Studio 966. If you often find yourself hearing about film or book recommendations from your friends and family but never get around to actually exploring them, this app would serve you well."
       />
     </SimpleGrid>
-  );
+  )
 }
