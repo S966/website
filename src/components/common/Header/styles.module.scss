@@ -1,0 +1,16 @@
+.show-small {
+  display: initial;
+}
+.hide-small {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .show-small {
+    display: none;
+  }
+
+  .hide-small {
+    display: flex !important;
+  }
+}

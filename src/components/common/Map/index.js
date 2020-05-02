@@ -1,21 +1,22 @@
 import { Flex, Box, Image, Heading, Link, Text } from '@chakra-ui/core'
+import style from './styles.module.scss'
 
 function Item({ title, body, email, twitter, address_1, address_2 }) {
   return (
     <Flex
+      className={style['wrapper']}
       border="1px"
       borderColor="gray.200"
-      px={10}
-      h="300px"
+      p={10}
       direction="column"
       justify="start"
       align="start"
       position="absolute"
       right="5%"
+      left="5%"
       bg="white"
     >
       <Heading
-        marginTop="19px"
         marginBottom=".5rem"
         lineHeight="1.4"
         fontFamily="PT Sans, sans-serif"
@@ -26,24 +27,20 @@ function Item({ title, body, email, twitter, address_1, address_2 }) {
       <Text marginBottom="1.25rem" textAlign="start">
         {body}
       </Text>
-      <Text textAlign="start" marginTop="26px" lineHeight="1px">
+      <Text textAlign="start">
         Inquiries:{' '}
         <Link href={`mailto:${email}`} color="#2ba6cb">
           {email}
         </Link>
       </Text>
-      <Text textAlign="start" marginTop="36px" lineHeight="1px">
+      <Text marginBottom="1.25rem" textAlign="start">
         Twitter:{' '}
         <Link href={`https://twitter.com/${twitter}`} color="#2ba6cb">
           {twitter}
         </Link>
       </Text>
-      <Text textAlign="start" marginTop="46px" lineHeight="1px">
-        {address_1}
-      </Text>
-      <Text textAlign="start" marginTop="36px" lineHeight="1px">
-        {address_2}
-      </Text>
+      <Text textAlign="start">{address_1}</Text>
+      <Text textAlign="start">{address_2}</Text>
     </Flex>
   )
 }
@@ -58,7 +55,6 @@ export default function Map() {
         twitter="@studio966"
         address_1="2nd floor, Murjana Building #206 "
         address_2="Prince Sultan Street, Jeddah, Saudi Arabia "
-        h="300px"
       />
 
       <iframe

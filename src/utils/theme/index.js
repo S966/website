@@ -1,11 +1,47 @@
-import { theme as chakraTheme } from "@chakra-ui/core";
+import { theme as chakraTheme } from '@chakra-ui/core'
 
 export const customTheme = {
   ...chakraTheme,
+  colors: {
+    ...chakraTheme.colors,
+    mustard: '#f4b860',
+    sky: '#23D7DB',
+    strawberry: '#ed6555',
+    charcoal: '#555',
+  },
   fonts: {
-    heading: "Arvo",
-    body: "Arvo",
-    mono: "Arvo",
+    heading: 'PT Sans',
+    body: 'Arvo',
+    mono: 'Arvo',
+  },
+  fontSizes: {
+    xs: '12px',
+    sm: '14px',
+    md: '16px',
+    lg: '18px',
+    xl: '20px',
+    '2xl': '24px',
+    '3xl': '28px',
+    '4xl': '36px',
+    '5xl': '48px',
+    '6xl': '64px',
+  },
+  lineHeights: {
+    normal: 'normal',
+    none: '1',
+    shorter: '1.25',
+    short: '1.375',
+    base: '1.5',
+    tall: '1.625',
+    taller: '2',
+  },
+  letterSpacings: {
+    tighter: '-0.05em',
+    tight: '-0.025em',
+    normal: '0',
+    wide: '0.025em',
+    wider: '0.05em',
+    widest: '0.1em',
   },
   fontWeights: {
     ...chakraTheme.fontWeights,
@@ -13,4 +49,4 @@ export const customTheme = {
     medium: 600,
     bold: 700,
   },
-};
+}
