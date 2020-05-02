@@ -3,7 +3,13 @@ import { Flex, Box, Image, Heading, Text } from '@chakra-ui/core'
 function Item({ src, alt, title, body }) {
   return (
     <Flex my="8" direction="column" justify="center" align="center">
-      <Image objectFit="cover" src={src} alt={alt} size="200px" rounded="full" />
+      <Image
+        objectFit="cover"
+        src={src}
+        alt={alt}
+        size={['150px', '200px']}
+        rounded="full"
+      />
       <Heading size="md" my="5">
         {title}
       </Heading>
