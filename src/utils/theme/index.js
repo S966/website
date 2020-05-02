@@ -7,6 +7,7 @@ export const customTheme = {
     mustard: '#f4b860',
     sky: '#23D7DB',
     strawberry: '#ed6555',
+    charcoal: '#555',
   },
   fonts: {
     heading: 'PT Sans',

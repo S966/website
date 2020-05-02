@@ -1,33 +1,35 @@
-import { Grid, Heading, Box, Text, Flex } from "@chakra-ui/core";
+import { Grid, Heading, Box, Text, Flex } from '@chakra-ui/core'
 
 function Item({ title, body }) {
   return (
     <Box mt="6">
-      <Heading lineHeight="1.4">{title}</Heading>
-      <Text mt="3" lineHeight="1.8">
+      <Heading color="charcoal" fontWeight="normal" fontSize="3xl" lineHeight="1.4">
+        {title}
+      </Heading>
+      <Text mt="3" lineHeight="tall" color="charcoal" fontSize="lg">
         {body}
       </Text>
     </Box>
-  );
+  )
 }
 
 export default function ServicesBody() {
   return (
-    <Flex w="70%" direction="column" justify="center" align="center" my="8">
-      <Text fontSize="xl">
-        Just like people, we know that every project we work with is different –
-        yet we give each one the same enthusiastic level of care, attention to
-        detail, and accuracy it deserves. Here’s an idea of how we work.
+    <Flex w="60%" direction="column" justify="center" align="center" my="8">
+      <Text fontSize="xl" color="charcoal">
+        Just like people, we know that every project we work with is different – yet we
+        give each one the same enthusiastic level of care, attention to detail, and
+        accuracy it deserves. Here’s an idea of how we work.
       </Text>
       <Box
         w="100%"
-        borderStyle="dotted"
-        borderWidth="1px"
-        color="#555"
+        borderTopStyle="dotted"
+        borderTopWidth="1px"
+        borderTopColor="black"
         mt="12"
         mb="8"
       />
-      <Grid templateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]} gap="10">
+      <Grid width="95%" templateColumns={['1fr', '1fr', '1fr', '1fr 1fr']} gap="10">
         <Flex direction="column">
           <Item
             title="IT STARTS WITH A CLEAR VISION"
@@ -64,5 +66,5 @@ export default function ServicesBody() {
         </Flex>
       </Grid>
     </Flex>
-  );
+  )
 }
