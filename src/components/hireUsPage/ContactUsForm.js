@@ -10,17 +10,24 @@ import {
   FormLabel,
   Stack,
   Box,
-} from '@chakra-ui/core'
+} from "@chakra-ui/core";
 
 export default function ContacUsForm() {
   return (
     <Flex direction="column" my="8">
       <Heading>You should hire us! </Heading>
       <Text my="6">
-        So, you've got a cool project in mind and don't know where to start? Drop us a
-        line!{' '}
+        So, you've got a cool project in mind and don't know where to start?
+        Drop us a line!{" "}
       </Text>
-      <FormControl as="form" data-netlify="true" method="POST" name="s966-hire-us">
+      <FormControl
+        as="form"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        name="s966-hire-us-form"
+      >
+        <input type="hidden" name="form-name" value="s966-hire-us-form" />
         <Stack spacing="8">
           <Box>
             <FormLabel htmlFor="name">Your Name *</FormLabel>
@@ -33,7 +40,9 @@ export default function ContacUsForm() {
           </Box>
 
           <Box>
-            <FormLabel htmlFor="project-details">Tell us about your project *</FormLabel>
+            <FormLabel htmlFor="project-details">
+              Tell us about your project *
+            </FormLabel>
             <Textarea id="project-details" isRequired name="project" />
           </Box>
 
@@ -50,12 +59,16 @@ export default function ContacUsForm() {
           </Box>
 
           <Box>
-            <FormLabel htmlFor="start-time">When would like to get started?</FormLabel>
+            <FormLabel htmlFor="start-time">
+              When would like to get started?
+            </FormLabel>
             <Input id="start-time" name="start-time" />
           </Box>
 
           <Box>
-            <FormLabel htmlFor="hear-about-us">How did you hear about us?</FormLabel>
+            <FormLabel htmlFor="hear-about-us">
+              How did you hear about us?
+            </FormLabel>
             <Input id="hear-about-us" name="hear-about-us" />
           </Box>
           <Button
@@ -73,5 +86,5 @@ export default function ContacUsForm() {
         </Stack>
       </FormControl>
     </Flex>
-  )
+  );
 }
