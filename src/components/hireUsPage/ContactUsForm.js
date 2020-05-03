@@ -20,7 +20,7 @@ export default function ContacUsForm() {
         So, you've got a cool project in mind and don't know where to start? Drop us a
         line!{' '}
       </Text>
-      <FormControl as="form" data-netlify="true">
+      <FormControl as="form" data-netlify="true" method="POST" name="s966-hire-us">
         <Stack spacing="8">
           <Box>
             <FormLabel htmlFor="name">Your Name *</FormLabel>
