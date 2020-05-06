@@ -9,10 +9,21 @@ import {
   Grid,
   Stack,
 } from '@chakra-ui/core'
+import RouterLink from 'next-translate/Link'
 import { FaFacebookSquare, FaTwitter } from 'react-icons/fa'
 import style from './styles.module.scss'
 
 let year = new Date().getFullYear()
+
+function FooterItem({ title, link }) {
+  return (
+    <PseudoBox borderWidth="3px" borderColor="transparent" mr="4" px="2">
+      <RouterLink href={link} passHref>
+        <Link>{title}</Link>
+      </RouterLink>
+    </PseudoBox>
+  )
+}
 
 export default function Footer() {
   return (
@@ -58,19 +69,19 @@ export default function Footer() {
         w="60%"
       >
         <PseudoBox _hover={{ color: '#ed6555' }}>
-          <Link>services </Link>
+          <FooterItem title="services" link="/services" />
         </PseudoBox>
         <Text className={style['dot']} color="#ed6555">
           •
         </Text>
         <PseudoBox _hover={{ color: '#ed6555' }}>
-          <Link>work</Link>
+          <FooterItem title="work" link="/work" />
         </PseudoBox>
         <Text className={style['dot']} color="#ed6555">
           •
         </Text>
         <PseudoBox _hover={{ color: '#ed6555' }}>
-          <Link>colophon</Link>
+          <FooterItem title="colophon" link="/colophon" />
         </PseudoBox>
         <Text className={style['hide']} color="#ed6555">
           •
