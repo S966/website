@@ -1,4 +1,24 @@
 @font-face {
+  font-family: 'Mensch Thin';
+  font-weight: 100;
+  src: url('./static/fonts/mensch-thin-wf.eot'); /* IE9 Compat Modes */
+  src: local('mensch-thin-wf'), local('menschThin'),
+    url('./static/fonts/mensch-thin-wf.eot?#iefix') format('embedded-opentype'),
+    url('./static/fonts/mensch-thin-wf.woff') format('woff'),
+    url('./static/fonts/mensch-thin-wf.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mensch Bold';
+  font-weight: 100;
+  src: url('./static/fonts/mensch-bold-wf.eot'); /* IE9 Compat Modes */
+  src: local('mensch-Bold-wf'), local('menschBold'),
+    url('./static/fonts/mensch-bold-wf.eot?#iefix') format('embedded-opentype'),
+    url('./static/fonts/mensch-bold-wf.woff') format('woff'),
+    url('./static/fonts/mensch-bold-wf.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Arvo';
   src: local('Arvo'),
     url('https://fonts.gstatic.com/s/arvo/v13/tDbD2oWUg0MKqScQ7Z7o_vo.woff2')

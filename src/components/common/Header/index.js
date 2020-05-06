@@ -56,7 +56,7 @@ function NavItem({ title, link }) {
       borderWidth="3px"
       borderColor="transparent"
       mr="4"
-      p="4"
+      px="2"
       _hover={{
         borderWidth: "3px",
         borderColor: "#ed6555",
