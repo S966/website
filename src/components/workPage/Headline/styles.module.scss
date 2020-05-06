@@ -18,7 +18,6 @@
   width: 100%;
   text-transform: uppercase;
   color: #ed6555;
-  margin-left: -.53em;
   margin-top: -.459em;
   position: relative;
   top: 15%;
@@ -76,9 +75,8 @@
 .char21,
 .char22,
 .char23 {
-  font-size: 51%;
+  font-size: 7vw;
   display: inline-block;
-  font-size: 117.054px !important;
 }
 
 .char1 {
@@ -91,7 +89,7 @@
 }
 .char3 {
   left: 3.45em;
-  padding-left: 0.1em;
+  padding-left: 0.2em;
 }
 .char4 {
   left: 2.843em;
@@ -121,9 +119,13 @@
   left: 6.02em;
   padding-left: 0.1em;
 }
+.char11 {
+  left: 6.02em;
+  padding-left: 0.2em;
+}
 .char12 {
   left: 6.93em;
-  padding-left: 0.1em;
+  padding-left: 2vw;
 }
 .char13 {
   left: 7.49em;
@@ -132,6 +134,10 @@
 .char14 {
   left: 8.09em;
   padding-left: 0.1em;
+}
+.char15 {
+  left: 8.09em;
+  padding-left: 0.2em;
 }
 .char16 {
   left: 8.99em;
@@ -144,6 +150,10 @@
 .char18 {
   left: 10.19em;
   padding-left: 0.1em;
+}
+.char19 {
+  left: 10.19em;
+  padding-left: 0.2em;
 }
 .char20 {
   left: 11.13em;
@@ -160,70 +170,4 @@
 .char23 {
   left: 12.55em;
   padding-left: 0.1em;
-}
-
-/*.char1:after {content: "W"; margin-left: -.626em;}
-.char2:after {content: "E"; margin-left: -.505em;}
-.char3:after {content: " "; margin-left: -.490em;}
-.char4:after {content: "S"; margin-left: -.490em;}
-.char5:after {content: "C"; margin-left: -.505em;}
-.char6:after {content: "R"; margin-left: -.490em;}
-.char7:after {content: "A"; margin-left: -.430em;}
-.char8:after {content: "T"; margin-left: -.475em;}
-.char9:after {content: "C"; margin-left: -.505em;}
-.char10:after {content: "H"; margin-left: -.53em;}
-.char11:after {content: " "; margin-left: -.490em;}
-.char12:after {content: "O"; margin-left: -.477em;}
-.char13:after {content: "U"; margin-left: -.52em;}
-.char14:after {content: "R"; margin-left: -.52em;}
-.char15:after {content: " "; margin-left: -.490em;}
-.char16:after {content: "O"; margin-left: -.477em;}
-.char17:after {content: "W"; margin-left: -.626em;}
-.char18:after {content: "N"; margin-left: -.52em;}
-.char19:after {content: " "; margin-left: -.490em;}
-.char20:after {content: "I"; margin-left: -.278em;}
-.char21:after {content: "T"; margin-left: -.475em;}
-.char22:after {content: "C"; margin-left: -.505em;}
-.char23:after {content: "H"; margin-left: -.53em;}
-*/
-.char1:after,
-.char2:after,
-.char3:after,
-.char4:after,
-.char5:after,
-.char6:after,
-.char7:after,
-.char8:after,
-.char9:after,
-.char10:after,
-.char11:after,
-.char11:after,
-.char12:after,
-.char13:after,
-.char14:after,
-.char15:after,
-.char16:after,
-.char17:after,
-.char18:after,
-.char19:after,
-.char20:after,
-.char21:after,
-.char22:after,
-.char23:after {
-  text-align: center;
-  color: #f8f7e5;
-  position: absolute;
-  font-family: 'MenschBold' !important;
-  width: 100%;
-  font-size: 105.6%;
-  text-transform: uppercase;
-  margin-top: 0.06em;
-  z-index: -1;
-  *display: inline;
-}
-
-.full-banner {
-  width: auto;
-  max-width: 1430px;
-  height: 420px;
 }

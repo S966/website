@@ -13,12 +13,7 @@ export default function Headline() {
       backgroundImage="url(/static/images/pattern.png), linear-gradient(45deg, #362d6c 0%,#23d7db 119%)"
       className={style['banner']}
     >
-      <Heading
-        className={style['article_title']}
-        as="h1"
-        fontSize="217.054px"
-        textTransform="uppercase"
-      >
+      <Heading className={style['article_title']} as="h1" textTransform="uppercase">
         <PseudoBox className={style['char1']}>W</PseudoBox>
         <PseudoBox className={style['char2']}>e</PseudoBox>
         <PseudoBox className={style['char3']}> </PseudoBox>
