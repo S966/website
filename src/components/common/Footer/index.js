@@ -72,11 +72,11 @@ export default function Footer() {
         <PseudoBox _hover={{ color: '#ed6555' }}>
           <Link>colophon</Link>
         </PseudoBox>
-        <Text className={style['dot']} color="#ed6555">
+        <Text className={style['hide']} color="#ed6555">
           •
         </Text>
         <PseudoBox _hover={{ color: '#ed6555' }}>
-          <Link>rss</Link>
+          <Link className={style['hide']}>rss</Link>
         </PseudoBox>
       </Flex>
       <Stack direction="column" align="center" fontSize="1.205em">
