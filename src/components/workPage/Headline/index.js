@@ -10,7 +10,7 @@ export default function Headline() {
       my="6"
       align="center"
       justify="center"
-      backgroundImage="url(http://www.966.io/images/pattern.png), linear-gradient(45deg, #362d6c 0%,#23d7db 119%)"
+      backgroundImage="url(/static/images/pattern.png), linear-gradient(45deg, #362d6c 0%,#23d7db 119%)"
       className={style['banner']}
     >
       <Heading
