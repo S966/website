@@ -1,14 +1,22 @@
-import Header from "../components/common/Header";
-import CustomCarousel from "../components/homePage/Carousel";
-import WhoAreWe from "../components/homePage/WhoAreWe";
-import OurClients from "../components/homePage/OurClients";
-import Map from "../components/common/Map";
-import Newsletter from "../components/common/Newsletter";
-import Footer from "../components/common/Footer";
+import Head from 'next/head'
+import Header from '../components/common/Header'
+import CustomCarousel from '../components/homePage/Carousel'
+import WhoAreWe from '../components/homePage/WhoAreWe'
+import OurClients from '../components/homePage/OurClients'
+import Map from '../components/common/Map'
+import Newsletter from '../components/common/Newsletter'
+import Footer from '../components/common/Footer'
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Studio 966 | Beam Me Up, Scotty</title>
+        <meta property="og:title" content="Studio 966 | Beam Me Up, Scotty" key="title" />
+      </Head>
+      <Head>
+        <meta property="og:title" content="Studio 966 | Beam Me Up, Scotty" key="title" />
+      </Head>
       <Header />
       <CustomCarousel />
       <WhoAreWe />
@@ -17,5 +25,5 @@ export default function Home() {
       <Newsletter />
       <Footer />
     </>
-  );
+  )
 }
