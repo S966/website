@@ -1,7 +1,7 @@
 import { Link, Heading, Flex, Box, Text, Grid } from '@chakra-ui/core'
 import { Carousel } from 'react-responsive-carousel'
 import { TiAttachment } from 'react-icons/ti'
-import { Image } from 'cloudinary-react'
+import { Image, CloudinaryContext } from 'cloudinary-react'
 
 export default function WorkItem({ images, title, responsibilities, body, logo, links }) {
   return (
@@ -17,7 +17,9 @@ export default function WorkItem({ images, title, responsibilities, body, logo, 
         interval={8 * 1000}
       >
         {images.map(({ alt, src }) => (
-          <Image alt={alt} cloudName="s966" publicId={src} />
+          <CloudinaryContext secure>
+            <Image alt={alt} cloudName="s966" publicId={src} />
+          </CloudinaryContext>
         ))}
       </Carousel>
       <Heading size="2xl" textAlign="center" my="8">
@@ -41,7 +43,14 @@ export default function WorkItem({ images, title, responsibilities, body, logo, 
         </Box>
         <Flex direction="column">
           <Flex direction="column" spacing="5">
-            <Image cloudName="s966" publicId={logo} alt="the client logo." width="150" />
+            <CloudinaryContext secure>
+              <Image
+                cloudName="s966"
+                publicId={logo}
+                alt="the client logo."
+                width="150"
+              />
+            </CloudinaryContext>
             {links.map(({ href, label }) => (
               <Link my="6" href={href}>
                 <Flex align="baseline">
