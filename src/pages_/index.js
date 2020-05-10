@@ -13,6 +13,8 @@ export default function Home() {
       <Head>
         <title>Studio 966 | Beam Me Up, Scotty</title>
 <link rel="preconnect" href="https://a.tiles.mapbox.com/v4/966.i66h5i7m/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiOTY2IiwiYSI6IlYtTlBwQ1kifQ.2KPxu2Nv_c5IPZMZj7EFcw"/>
+<link rel="preconnect" href="https://a.tiles.mapbox.com/v4/966.i66h5i7m/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiOTY2IiwiYSI6IlYtTlBwQ1kifQ.2KPxu2Nv_c5IPZMZj7EFcw"/>
+<link rel="preconnect" href="https://a.tiles.mapbox.com/v4/966.i66h5i7m/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiOTY2IiwiYSI6IlYtTlBwQ1kifQ.2KPxu2Nv_c5IPZMZj7EFcw"/>
         <meta property="og:title" content="Studio 966 | Beam Me Up, Scotty" key="title" />
       </Head>
       <Head>
