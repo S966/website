@@ -11,13 +11,11 @@ export default function HungerStationWork() {
       <WorkItem
         images={[
           {
-            src:
-              "/static/images/work/hunger-station/banner-hunger-station-1.jpg",
+            src: "s966/work/hunger-station/banner-hunger-station-2_qywupp.jpg",
             alt: "Hunger station app.",
           },
           {
-            src:
-              "/static/images/work/hunger-station/banner-hunger-station-2.jpg",
+            src: "s966/work/hunger-station/banner-hunger-station-1_gdtofn.jpg",
             alt: "Hunger station app.",
           },
         ]}
@@ -33,7 +31,7 @@ export default function HungerStationWork() {
         We were happy to work with the app team to further develop the various glitches in the app’s UX and UI. For example, we found, through usability studies that customers are often frustrated with the inconsistency of location names, This, among other things, was remedied by our team in order to create a more fluid UX (see full report ). We also constructed a whole new design persona for the app’s copy so that the app would have the leverage of a distinct character.
 
         Finally, we helped the Hunger Station team to upgrade their visual interface. With some careful design, we were able to create a unique set of screens that all speak one language and have one visual voice without straying too far from the brand’s original visual scheme and its integrity.`}
-        logo="/static/images/work/hunger-station/hunger-station-logo.png"
+        logo="s966/work/hunger-station/hunger-station-logo_oajang.png"
         links={[
           {
             label: "Android app",

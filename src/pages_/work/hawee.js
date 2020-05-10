@@ -11,15 +11,15 @@ export default function Hawee() {
       <WorkItem
         images={[
           {
-            src: "/static/images/work/hawee/banner-haweee-1.jpg",
+            src: "s966/work/haweee/banner-haweee-1_xrivq4.jpg",
             alt: "Hawee app.",
           },
           {
-            src: "/static/images/work/hawee/banner-haweee-2.jpg",
+            src: "s966/work/haweee/banner-haweee-3_tztlri.jpg",
             alt: "Hawee app.",
           },
           {
-            src: "/static/images/work/hawee/banner-haweee-3.jpg",
+            src: "s966/work/haweee/banner-haweee-2_uau6r2.jpg",
             alt: "Hawee app.",
           },
         ]}
@@ -35,7 +35,7 @@ export default function Hawee() {
         Studio 966 was thrilled to be a part of this project. We were in charge of putting together the UI and UX for the app. Through a scoping process, we were able to define precisely the features that the app would need and include. Then, we wireframed the app and created an interactive prototype using hi-res mockups that were streamlined through Invisionapp so the client could see a very close version of the app before development starts. We then developed it through Phonegap to ensure that it is available on all platforms.
 
         Now the app is being used by international players to design soccer matches around the world. With its friendly and simple interface, the app offers an inviting way to start playing soccer!`}
-        logo="/static/images/work/hawee/haweee-logo.png"
+        logo="s966/work/haweee/haweee-logo_dxkpd2.png"
         links={[
           {
             label: "Visit the Site",

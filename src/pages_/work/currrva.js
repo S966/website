@@ -11,11 +11,11 @@ export default function Currrva() {
       <WorkItem
         images={[
           {
-            src: "/static/images/work/currrva/banner-currrva-1.jpg",
+            src: "s966/work/currrva/banner-currrva-1_xkuygc.jpg",
             alt: "Currrva Logo.",
           },
           {
-            src: "/static/images/work/currrva/banner-currrva-2.jpg",
+            src: "s966/work/currrva/banner-currrva-2_os06tg.jpg",
             alt: "Currrva Logo.",
           },
         ]}
@@ -32,7 +32,7 @@ export default function Currrva() {
         The name Currrva comes from the Italian word curva, which is the curved hotspot for fans in a soccer stadium on either ends of the playing field. Currrva, as an MVP, currently supports soccer as a flagship game. We will then expand it to accommodate various sports games, such as the Madden franchise, NBA 2k franchise, NHL franchise and then possibly some fighting games, and casual racing games.
 
         We have gone far into development for this app and we will be ready to launch for beta soon.`}
-        logo="/static/images/work/currrva/currrva-logo.png"
+        logo="s966/work/currrva/currrva-logo_hzhraq.png"
         links={[
           {
             label: "Visit the Site",

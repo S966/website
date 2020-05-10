@@ -11,11 +11,11 @@ export default function Sift() {
       <WorkItem
         images={[
           {
-            src: "/static/images/work/sift/banner-sift-1.jpg",
+            src: "s966/work/sift/banner-sift-1_rmfdxq.jpg",
             alt: "Sift Logo.",
           },
           {
-            src: "/static/images/work/sift/banner-sift-2.jpg",
+            src: "s966/work/sift/banner-sift-2_tdvppi.jpg",
             alt: "Sift Logo.",
           },
         ]}
@@ -32,7 +32,7 @@ export default function Sift() {
 
         Sift is a venture we are excited about. We have not launched or implemented it yet. We have gone far, however, in gathering the results of user testing and designing the potential interface and UX for the app.
         `}
-        logo="/static/images/work/sift/sift-logo.png"
+        logo="s966/work/sift/sift-logo_qopmew.png"
         links={[
           {
             label: "Coming soon!",

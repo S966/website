@@ -1,4 +1,5 @@
-import { Flex, Heading, Image, Link, PseudoBox } from '@chakra-ui/core'
+import { Flex, Heading, Link, PseudoBox } from '@chakra-ui/core'
+import { Image } from 'cloudinary-react'
 
 const styles = {
   grayscale: {
@@ -16,7 +17,7 @@ function Item({ src, alt, href }) {
     <Flex my="8" direction="column" justify="center" align="center">
       <PseudoBox style={styles.grayscale} _hover={styles.colored}>
         <Link href={href}>
-          <Image src={src} alt={alt} />
+          <Image alt={alt} cloudName="s966" publicId={src} />
         </Link>
       </PseudoBox>
     </Flex>
@@ -45,19 +46,19 @@ export default function OurClients() {
       >
         <Item
           href="https://hungerstation.com"
-          src="/static/images/hunger-station-logo.png"
+          src="s966/hunger-station-logo_diq8bx"
           alt="Hunger Station Logo"
         />
-        <Item src="/static/images/haweee-logo.png" alt="Haweee Logo" />
+        <Item src="s966/haweee-logo_fbgaty.jpg" alt="Haweee Logo" />
         <Item
           href="https://nm.sa/ar/"
-          src="/static/images/namaa-logo.png"
+          src="s966/namaa-logo_vzmi45.jpg"
           alt="Namaa Logo"
         />
         <Item
           href="https://albaik.com"
-          src="/static/images/albaik-logo.png"
-          alt="AlBaik Logo"
+          src="s966/albaik-logo_w32hpy.jpg"
+          klt="AlBaik Logo"
         />
       </Flex>
     </Flex>

@@ -1,10 +1,11 @@
 import { Carousel } from 'react-responsive-carousel'
-import { Flex, Box, Image, Heading } from '@chakra-ui/core'
+import { Flex, Box, Heading } from '@chakra-ui/core'
+import { Image } from 'cloudinary-react'
 
 function Item({ src, alt, text }) {
   return (
     <Box>
-      <Image objectFit="cover" alt={alt} src={src} w="100%" />
+      <Image alt={alt} cloudName="s966" publicId={src} />
       <Heading size="md" textAlign="start" pl="5" py="2" as="h1" color="gray.100">
         {text}
       </Heading>
@@ -18,7 +19,7 @@ export default function HeroImage() {
       <Carousel showStatus={false} showThumbs={false} showIndicators={false}>
         <Item
           alt="a wall filled with sticky notes about brainstorming ideas."
-          src="/static/images/966-about-us-header.jpg"
+          src="s966/966-about-us-header_dh9haj.jpg"
           text="We solve problems - by design."
         />
       </Carousel>

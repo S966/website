@@ -1,10 +1,11 @@
 import { Carousel } from 'react-responsive-carousel'
-import { Flex, Box, Image, Heading } from '@chakra-ui/core'
+import { Flex, Box, Heading } from '@chakra-ui/core'
+import { Image } from 'cloudinary-react'
 
 function Item({ src, alt, text }) {
   return (
     <Box>
-      <Image alt={alt} src={src} w="100%" />
+      <Image alt={alt} cloudName="s966" publicId={src} />
       <Heading
         fontSize={['sm', 'md', '4xl']}
         fontWeight="400"
@@ -35,17 +36,17 @@ export default function CustomCarousel() {
       >
         <Item
           alt="Currrva app."
-          src="/static/images/banner-home-1.jpg"
+          src="s966/banner-home-1_zcdtoe.jpg"
           text="We just redefined your winning experience."
         />
         <Item
           alt="Albaik app."
-          src="/static/images/banner-home-2.jpg"
+          src="s966/banner-home-2_gk13s0.jpg"
           text="A simplified solution to get your fried chicken fix!"
         />
         <Item
-          alt="Currrva app."
-          src="/static/images/banner-home-3.jpg"
+          alt="Hunger Statgion app."
+          src="s966/banner-home-3_uedocm.jpg"
           text="Taking food delivery to the next level."
         />
       </Carousel>

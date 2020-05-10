@@ -11,7 +11,7 @@ export default function NamaaConference() {
       <WorkItem
         images={[
           {
-            src: "/static/images/work/namaa/banner-namaa-1.jpg",
+            src: "s966/work/namaa/banner-namaa-1_mgj8zw.jpg",
             alt: "Namaa Almunawara Logo.",
           },
         ]}
@@ -27,7 +27,7 @@ export default function NamaaConference() {
         As a benefactor of small businesses, Namaa takes meticulous care to propel those businesses by offering not only training and financial support but also packaging options and an official seal of approval. Products are even offered together to local buyers and tourists in booths and shops, hosted by Namaa for wider reach.
 
         Studio 966 had a hand in helping the event to be actualized. With a large group of applicants participating in the conference and in the entrepreneurship program, we took the digitizing of the event’s website into our own hands. To manage an event of this magnitude, we set up the entire online system. We even designed the online application process for both the conference and for the large number of young entrepreneurs to submit their business projects for review and evaluation.`}
-        logo="/static/images/work/namaa/namaa-logo.png"
+        logo="s966/work/namaa/namaa-logo_urbih8.png"
         links={[
           {
             label: "Visit the Site",
