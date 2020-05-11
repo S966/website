@@ -1,5 +1,10 @@
 import { Flex, Box, Image, Heading, Link, Text } from '@chakra-ui/core'
 import style from './styles.module.scss'
+import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
+
+const Map = ReactMapboxGl({
+  accessToken: 'pk.eyJ1IjoiOTY2IiwiYSI6IlYtTlBwQ1kifQ.2KPxu2Nv_c5IPZMZj7EFcw',
+})
 
 function Item({ title, body, email, twitter, address_1, address_2 }) {
   return (
@@ -45,7 +50,7 @@ function Item({ title, body, email, twitter, address_1, address_2 }) {
   )
 }
 
-export default function Map() {
+export default function StudioMap() {
   return (
     <Flex w="100%" direction="column" justify="center" align="end">
       <Item
@@ -57,13 +62,17 @@ export default function Map() {
         address_2="Prince Sultan Street, Jeddah, Saudi Arabia "
       />
 
-      <iframe
-        title="Studio 966 Map"
-        width="100%"
-        height="500px"
-        frameBorder="0"
-        src="https://a.tiles.mapbox.com/v4/966.i66h5i7m/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiOTY2IiwiYSI6IlYtTlBwQ1kifQ.2KPxu2Nv_c5IPZMZj7EFcw"
-      />
+      <Map
+        style="mapbox://styles/mapbox/streets-v9"
+        containerStyle={{
+          height: '100vh',
+          width: '100vw',
+        }}
+      >
+        <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
+          <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
+        </Layer>
+      </Map>
     </Flex>
   )
 }

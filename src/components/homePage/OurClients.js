@@ -60,7 +60,7 @@ export default function OurClients() {
         <Item
           href="https://albaik.com"
           src="s966/albaik-logo_w32hpy.jpg"
-          klt="AlBaik Logo"
+          alt="AlBaik Logo"
         />
       </Flex>
     </Flex>
