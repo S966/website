@@ -11,7 +11,7 @@ export default function Headline() {
       my="6"
       align="center"
       justify="center"
-      backgroundImage="url(https://res.cloudinary.com/s966/image/upload/v1589137011/s966/pattern_z58nvc.png), linear-gradient(45deg, #362d6c 0%,#23d7db 119%)"
+      backgroundImage="url(https://res.cloudinary.com/s966/image/upload/f_auto/v1589137011/s966/pattern_z58nvc.png), linear-gradient(45deg, #362d6c 0%,#23d7db 119%)"
       className={style['banner']}
     >
       <Heading className={style['article_title']} as="h1" textTransform="uppercase">

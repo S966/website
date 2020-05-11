@@ -93,7 +93,7 @@ export default function Header() {
       <Box
         w="100%"
         h="5px"
-        backgroundImage="url(https://res.cloudinary.com/s966/image/upload/v1589137015/s966/logo_fiormf.png)"
+        backgroundImage="url(https://res.cloudinary.com/s966/image/upload/f_auto/v1589137015/s966/logo_fiormf.png)"
         backgroundRepeat="repeat"
       />
       <Flex as="nav" alignItems="center" h="100px" color="strawberry">

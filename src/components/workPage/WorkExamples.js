@@ -1,6 +1,6 @@
 import { Flex, SimpleGrid, Heading, Text, PseudoBox, Link } from '@chakra-ui/core'
 import RouterLink from 'next-translate/Link'
-import { Image, CloudinaryContext } from 'cloudinary-react'
+import { Image, CloudinaryContext, Transformation } from 'cloudinary-react'
 
 function Item({ href, src, alt, title, body }) {
   return (
@@ -9,7 +9,9 @@ function Item({ href, src, alt, title, body }) {
         <RouterLink passHref href={href}>
           <Link>
             <CloudinaryContext secure>
-              <Image alt={alt} cloudName="s966" publicId={src} />
+              <Image alt={alt} cloudName="s966" publicId={src}>
+                <Transformation fetchFormat="auto" />
+              </Image>
             </CloudinaryContext>
           </Link>
         </RouterLink>

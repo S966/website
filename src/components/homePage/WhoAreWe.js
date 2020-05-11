@@ -40,7 +40,7 @@ export default function WhoAreWe() {
         direction={['column', 'column', 'column', 'row']}
       >
         <Item
-          src="https://res.cloudinary.com/s966/image/upload/v1589137021/s966/details-matter_oq0pun.jpg"
+          src="https://res.cloudinary.com/s966/image/upload/f_auto/v1589137021/s966/details-matter_oq0pun.jpg"
           alt="Canvas with prototyping."
           title="Details"
           body="We believe there’s no such thing as a ‘detail’. Each and every element
@@ -48,13 +48,13 @@ export default function WhoAreWe() {
         it deserves."
         />
         <Item
-          src="https://res.cloudinary.com/s966/image/upload/ar_1:1,c_fill,g_auto,r_max,w_200/v1589137023/s966/robust-software_krafor.jpg"
+          src="https://res.cloudinary.com/s966/image/upload/f_auto/ar_1:1,c_fill,g_auto,r_max,w_200/v1589137023/s966/robust-software_krafor.jpg"
           alt="iPhone home screen with apps."
           title="Design"
           body="We create design that crafts a fantastic user experience, where every move a user makes is intuitive, seamless, and second nature."
         />
         <Item
-          src="https://res.cloudinary.com/s966/image/upload/ar_1:1,c_fill,g_auto,r_max,w_200/v1589137017/s966/mobile-first_el9mmn.jpg"
+          src="https://res.cloudinary.com/s966/image/upload/f_auto/ar_1:1,c_fill,g_auto,r_max,w_200/v1589137017/s966/mobile-first_el9mmn.jpg"
           alt="iPhone on keyboard."
           title="Delivery"
           body="We deliver a top-notch end product in both performance and usability, and users are better off for it. You will be too."

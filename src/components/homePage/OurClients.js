@@ -1,5 +1,5 @@
 import { Flex, Heading, Link, PseudoBox } from '@chakra-ui/core'
-import { Image, CloudinaryContext } from 'cloudinary-react'
+import { Image, CloudinaryContext, Transformation } from 'cloudinary-react'
 
 const styles = {
   grayscale: {
@@ -18,7 +18,9 @@ function Item({ src, alt, href }) {
       <PseudoBox style={styles.grayscale} _hover={styles.colored}>
         <Link href={href}>
           <CloudinaryContext secure>
-            <Image alt={alt} cloudName="s966" publicId={src} />
+            <Image alt={alt} cloudName="s966" publicId={src}>
+              <Transformation fetchFormat="auto" />
+            </Image>
           </CloudinaryContext>
         </Link>
       </PseudoBox>

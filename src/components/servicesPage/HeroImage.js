@@ -1,12 +1,14 @@
 import { Carousel } from 'react-responsive-carousel'
 import { Flex, Box, Heading } from '@chakra-ui/core'
-import { Image, CloudinaryContext } from 'cloudinary-react'
+import { Image, CloudinaryContext, Transformation } from 'cloudinary-react'
 
 function Item({ src, alt, text }) {
   return (
     <Box>
       <CloudinaryContext secure>
-        <Image alt={alt} cloudName="s966" publicId={src} />
+        <Image alt={alt} cloudName="s966" publicId={src}>
+          <Transformation fetchFormat="auto" />
+        </Image>
       </CloudinaryContext>
       <Heading size="md" textAlign="start" pl="5" py="2" as="h1" color="gray.100">
         {text}
