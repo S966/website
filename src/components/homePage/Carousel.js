@@ -27,7 +27,7 @@ function Item({ src, alt, text }) {
 
 export default function CustomCarousel() {
   return (
-    <Flex w="95%">
+    <Flex>
       <Carousel
         autoPlay
         infiniteLoop
